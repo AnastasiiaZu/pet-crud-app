@@ -1,0 +1,100 @@
+openapi: 3.0.3
+info:
+  title: Anastasiia's Pet App
+  description: Pet app allows you to create, read, update, or delete a pet
+  version: 1.0.0
+servers:
+  - url: 'http://localhost:8080'
+
+paths:
+  /pets:
+    post:
+      tags:
+        - Pet
+      summary: Create a new pet
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [ name ]
+              properties:
+                name: { type: string, example: "Dolphin", maxLength: 16 }
+      responses:
+        201:
+          description: Created a pet
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/PetResponse" }
+        400:
+          description: Wrong format on the name field
+
+  /pets/{petId}:
+    get:
+      tags:
+        - Pet
+      summary: Get data about a pet
+      parameters:
+        - { name: petId, in: path, required: true, schema: { $ref: '#/components/schemas/PetId' } }
+      responses:
+        200:
+          description: Pet data
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/PetResponse" }
+        404:
+          description: Queried pet does not exist
+    patch:
+      tags:
+        - Pet
+      summary: Update data about a pet
+      parameters:
+        - { name: petId, in: path, required: true, schema: { $ref: '#/components/schemas/PetId' } }
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [ name ]
+              properties:
+                name: { type: string, example: "Python", maxLength: 16 }
+      responses:
+        200:
+          description: Updated pet data
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/PetResponse" }
+        404:
+          description: Queried pet does not exist
+        400:
+          description: Wrong format on the name field
+
+    delete:
+      tags:
+        - Pet
+      summary: Delete a pet
+      parameters:
+        - { name: petId, in: path, required: true, schema: { $ref: '#/components/schemas/PetId' } }
+      responses:
+        204:
+          description: Pet deleted pet
+
+components:
+  schemas:
+    TimeStamp:
+      type: string
+      format: date-time
+      description: UTC timestamp
+      example: '2020-05-25T14:16:21.568Z'
+    PetId:
+      type: string
+      format: uuid
+      description: The internal id (UUID) of the pet. Case-insensitive
+      example: "754f8a3e-59cd-4497-a71b-e5da8ae0a861"
+    PetResponse:
+      type: object
+      required: [ id, name, createdAt ]
+      properties:
+        id: { $ref: "#/components/schemas/PetId" }
+        name: { type: string, example: "Python" }
+        createdAt: { $ref: "#/components/schemas/TimeStamp" }
