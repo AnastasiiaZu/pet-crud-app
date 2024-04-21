@@ -1,4 +1,3 @@
-package anastasiia.application
 package utils
 
 import spray.json.{DeserializationException, JsString, JsValue, JsonFormat}

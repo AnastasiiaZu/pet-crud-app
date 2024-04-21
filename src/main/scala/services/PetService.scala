@@ -1,9 +1,8 @@
-package anastasiia.application
-
 package services
+
 import akka.Done
+import storage.DataBase.pets
 import models.PetResponse
-import DataBase.pets
 import java.time.ZonedDateTime
 import java.util.UUID
 import scala.concurrent.{ExecutionContext, Future}
@@ -14,15 +13,13 @@ class PetService(dbConnectorString: String, var pets: Map[UUID, (String, ZonedDa
   // todo: add real connection once using an external DB
   println(dbConnectorString)
 
-  private def timeGenerator: ZonedDateTime = ZonedDateTime.now()
-  private def idGenerator: UUID = UUID.randomUUID()
-
   // Future wrapper imitates an async call to a DB
 
   def createPet(name: String): Future[PetResponse] = {
-
-    val createdAt = timeGenerator
-    val newUUID = idGenerator
+    def TimeGenerator: ZonedDateTime = ZonedDateTime.now()
+    def IdGenerator: UUID = UUID.randomUUID()
+    val createdAt = TimeGenerator
+    val newUUID = IdGenerator
     val newPet = newUUID -> (name, createdAt)
     pets = pets + newPet
 

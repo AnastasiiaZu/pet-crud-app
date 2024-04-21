@@ -1,4 +1,3 @@
-package anastasiia.application
 package models
 
 import spray.json.DefaultJsonProtocol.{StringJsonFormat, jsonFormat1}

@@ -1,13 +1,2 @@
-[debug] downloaded https://repo1.maven.org/maven2/org/mockito/mockito-core/2.10.0/mockito-core-2.10.0.pom
-[debug] downloaded https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.7.4/byte-buddy-agent-1.7.4.pom
-[debug] downloaded https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.7.4/byte-buddy-1.7.4.pom
-[debug] downloaded https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-parent/1.7.4/byte-buddy-parent-1.7.4.pom
-[debug] downloaded https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.7.4/byte-buddy-agent-1.7.4.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/mockito/mockito-core/2.10.0/mockito-core-2.10.0.jar
-[debug] downloaded https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.7.4/byte-buddy-1.7.4.jar
-[debug] downloaded https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.7.4/byte-buddy-agent-1.7.4-sources.jar
-[debug] downloaded https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.7.4/byte-buddy-agent-1.7.4-javadoc.jar
-[debug] downloaded https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.7.4/byte-buddy-1.7.4-sources.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/mockito/mockito-core/2.10.0/mockito-core-2.10.0-sources.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/mockito/mockito-core/2.10.0/mockito-core-2.10.0-javadoc.jar
-[debug] downloaded https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.7.4/byte-buddy-1.7.4-javadoc.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.34/mockito-scala_2.13-1.16.34.pom
+[debug] downloaded https://repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.34/mockito-scala_2.13-1.16.34.pom.sha1

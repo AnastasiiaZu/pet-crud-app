@@ -1,0 +1,30 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 9 Scala sources to /Users/anastasiiazubkova/Documents/pet-crud-app/target/scala-2.13/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/anastasiiazubkova/Documents/pet-crud-app/target/scala-2.13/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPetServiceTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPetService[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create a new pet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get an existing pet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None for a non-existing pet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should update an existing pet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should delete an existing pet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should delete a non-existing pet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mApiTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mApi[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 201 Created when creating a new pet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 200 OK with the correct pet when getting an existing pet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 404 Not Found when getting a non-existing pet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 200 OK with the updated pet when updating an existing pet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 404 Not Found when updating a non-existing pet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 204 No Content when deleting an existing pet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 360 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 12[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 12, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 1 s, completed 21 Apr 2024, 20:16:10[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

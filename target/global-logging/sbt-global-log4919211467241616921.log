@@ -1,0 +1,14 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 9 Scala sources to /Users/anastasiiazubkova/Documents/pet-crud-app/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/anastasiiazubkova/Documents/pet-crud-app/src/main/scala/api/Api.scala:11:31: object models is not a member of package anastasiia.application[0m
+[0m[[0m[31merror[0m] [0m[0mimport anastasiia.application.models.UpdatePetRequest[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/anastasiiazubkova/Documents/pet-crud-app/src/main/scala/api/Api.scala:40:21: not found: type UpdatePetRequest[0m
+[0m[[0m[31merror[0m] [0m[0m          entity(as[UpdatePetRequest]) { req =>[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 21 Apr 2024, 20:15:25[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

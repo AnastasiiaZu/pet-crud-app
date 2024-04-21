@@ -1,9 +1,9 @@
-package anastasiia.application
 package models
 
 import utils.JsonFormatters.{UUIDFormat, ZonedDateTimeFormat}
 import spray.json.DefaultJsonProtocol.{StringJsonFormat, jsonFormat3}
 import spray.json.RootJsonFormat
+
 import java.time.ZonedDateTime
 import java.util.UUID
 

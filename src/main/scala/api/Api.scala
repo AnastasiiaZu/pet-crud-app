@@ -1,18 +1,14 @@
-package anastasiia.application
 package api
 
 import services.PetService
-
-import akka.http.scaladsl.model.StatusCodes.{Created, NoContent, NotFound, OK}
+import akka.http.scaladsl.model.StatusCodes.{Created, OK}
 import akka.http.scaladsl.server.Directives.{complete, path, pathPrefix, post}
 import akka.http.scaladsl.server.{PathMatcher1, Route}
 import akka.http.scaladsl.server.Directives._
-import models.{CreatePetRequest, UpdatePetRequest}
 import akka.actor.ActorSystem
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
-import models.CreatePetRequest.fmt
 import akka.http.scaladsl.model.StatusCodes
-
+import models.{UpdatePetRequest, CreatePetRequest}
 import java.util.UUID
 import scala.util.{Failure, Success}
 
@@ -38,7 +34,6 @@ class Api(petService: PetService) (
             case Success(None) => complete(404, s"No pet with such id $id")
             case Success(Some(pet)) => complete(OK, pet)
           }
-        complete(petService.getPet(id))
       } ~ patch {
           entity(as[UpdatePetRequest]) { req =>
             onComplete(petService.updatePet(id, req.name)) {
